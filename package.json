@@ -1,0 +1,71 @@
+{
+    "name": "ion-format-support",
+    "displayName": "Ion Format Support",
+    "description": "Provides formatting and syntax highlighting for ion files",
+    "version": "1.0.1",
+    "publisher": "Avin",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Avinm/VSCode-Ion-Format-Support.git"
+    },
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Language Packs"
+    ],
+    "activationEvents": [
+        "onLanguage:ion"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "ion",
+                "aliases": [
+                    "Ion",
+                    "ion"
+                ],
+                "extensions": [
+                    ".ion"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ion",
+                "scopeName": "source.ion",
+                "path": "./syntaxes/ion.tmLanguage"
+            }
+        ],
+        "commands": [
+            {
+                "command": "ion.format-strict",
+                "title": "Format without JSON unpack",
+                "category": "Ion"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "ion.format-strict",
+                    "when": "editorLangId == ion"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}

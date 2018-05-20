@@ -1,3 +1,13 @@
+### Ion Format Support : A VSCode extension that provides formatting and syntax highlighting for ion files
+
+##### Copyright (C) 2015 Avin E.M
+
+This program is free software: you can redistribute it and/or modify it under the **terms of the version 3 of GNU General Public License** as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License included below for more details.
+
+====
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
