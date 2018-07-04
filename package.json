@@ -12,7 +12,7 @@
         "vscode": "^1.23.0"
     },
     "categories": [
-        "Language Packs"
+        "Programming Languages"
     ],
     "activationEvents": [
         "onLanguage:ion"
